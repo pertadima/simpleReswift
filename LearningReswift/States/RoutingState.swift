@@ -7,3 +7,12 @@
 //
 
 import Foundation
+import ReSwift
+
+struct RoutingState: StateType {
+    var navigationState: NavigationState
+    
+    init(navigationState: NavigationState = .login) {
+        self.navigationState = navigationState
+    }
+}

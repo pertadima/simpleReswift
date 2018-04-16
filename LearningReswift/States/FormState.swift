@@ -7,3 +7,12 @@
 //
 
 import Foundation
+import ReSwift
+
+struct FormState: StateType{
+    var value : String
+    init ()
+    {
+        value = "current value"
+    }
+}

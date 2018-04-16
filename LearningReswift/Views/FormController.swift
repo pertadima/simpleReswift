@@ -12,7 +12,7 @@ import ReSwift
 class FormController : UIViewController, StoreSubscriber {
     lazy var myForm = UITextField()
     lazy var myButton = UIButton()
-    
+    lazy var myText = UILabel()
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -33,6 +33,8 @@ class FormController : UIViewController, StoreSubscriber {
         view.backgroundColor = .white
         view.addSubview(myForm)
         view.addSubview(myButton)
+        view.addSubview(myText)
+        
         
         let margins = view.layoutMarginsGuide
         
@@ -53,11 +55,21 @@ class FormController : UIViewController, StoreSubscriber {
         myButton.backgroundColor = .red
         myButton.setTitle("Submit", for: UIControlState.normal)
         myButton.heightAnchor.constraint(equalToConstant: 40)
+        
+        //constraint text
+        
+        myText.translatesAutoresizingMaskIntoConstraints = false
+        myText.topAnchor.constraint(equalTo: myButton.bottomAnchor, constant : 20).isActive = true
+        myText.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
+        myText.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
+        myText.textColor = .red
     }
     
     func newState(state: FormState)
     {
         myForm.text = state.value
+        print(state.value)
+        myText.text = state.value
         myButton.addTarget(self, action: #selector(formAction), for: .touchUpInside)
     }
     

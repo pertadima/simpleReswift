@@ -7,3 +7,15 @@
 //
 
 import Foundation
+import ReSwift
+
+enum NavigationState: String {
+    case login = "FormController"
+    
+    var controller: UIViewController {
+        switch self {
+        case .login:
+            return FormController()
+        }
+    }
+}

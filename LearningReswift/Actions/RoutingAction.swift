@@ -7,3 +7,9 @@
 //
 
 import Foundation
+import ReSwift
+
+struct RoutingAction: Action {
+    let destination: NavigationState
+    let	value: String
+}
