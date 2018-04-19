@@ -13,6 +13,7 @@ class FormController : UIViewController, StoreSubscriber {
     lazy var myForm = UITextField()
     lazy var myButton = UIButton()
     lazy var myText = UILabel()
+    lazy var buttonNext = UIButton()
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -34,7 +35,7 @@ class FormController : UIViewController, StoreSubscriber {
         view.addSubview(myForm)
         view.addSubview(myButton)
         view.addSubview(myText)
-        
+        view.addSubview(buttonNext)
         
         let margins = view.layoutMarginsGuide
         
@@ -63,6 +64,17 @@ class FormController : UIViewController, StoreSubscriber {
         myText.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
         myText.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
         myText.textColor = .red
+        
+        //constraint button next
+        buttonNext.translatesAutoresizingMaskIntoConstraints = false
+        buttonNext.topAnchor.constraint(equalTo: myText.bottomAnchor, constant: 20).isActive = true
+        buttonNext.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
+        buttonNext.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
+        
+        buttonNext.backgroundColor = UIColor.blue
+        buttonNext.setTitle("Next", for: UIControlState.normal)
+        buttonNext.heightAnchor.constraint(equalToConstant: 40)
+        
     }
     
     func newState(state: FormState)
@@ -71,6 +83,7 @@ class FormController : UIViewController, StoreSubscriber {
         print(state.value)
         myText.text = state.value
         myButton.addTarget(self, action: #selector(formAction), for: .touchUpInside)
+        buttonNext.addTarget(self, action: #selector(nextAction), for: .touchUpInside)
     }
     
     override func didReceiveMemoryWarning() {
@@ -80,7 +93,13 @@ class FormController : UIViewController, StoreSubscriber {
     @objc func formAction()
     {
         let routeDestination: NavigationState = .login
-        store.dispatch(RoutingAction(destination: routeDestination,value: myForm.text!))
+        store.dispatch(RoutingAction(destination: routeDestination,value: myForm.text!, segue: .push))
+    }
+    
+    @objc func nextAction()
+    {
+        let routeDestination: NavigationState = .next
+        store.dispatch(RoutingAction(destination: routeDestination, value: myForm.text!, segue: .push))
     }
 }
 

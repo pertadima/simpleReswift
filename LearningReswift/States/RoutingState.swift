@@ -10,9 +10,15 @@ import Foundation
 import ReSwift
 
 struct RoutingState: StateType {
-    var navigationState: NavigationState
+    var navigation: NavigationState
+    var segue: Segue
+    var currentController: UINavigationController?
+    var nextNavigation: Bool
+    var dismiss: Bool = false
     
-    init(navigationState: NavigationState = .login) {
-        self.navigationState = navigationState
+    init(navigation: NavigationState = .login, segue: Segue = .push, next: Bool = false) {
+        self.navigation = navigation
+        self.segue = segue
+        self.nextNavigation = next
     }
 }

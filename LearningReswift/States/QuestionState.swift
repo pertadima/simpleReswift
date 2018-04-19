@@ -1,5 +1,5 @@
 //
-//  AppState.swift
+//  QuestionState.swift
 //  LearningReswift
 //
 //  Created by Irfan pertadima on 4/16/18.
@@ -9,8 +9,6 @@
 import Foundation
 import ReSwift
 
-struct AppState: StateType {
-    let routingState: RoutingState
-    let formState : FormState
-    let questionState: QuestionState
+struct QuestionState: StateType{
+    var questionModel: [QuestionModel?]
 }

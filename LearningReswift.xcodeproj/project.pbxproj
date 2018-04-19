@@ -24,6 +24,18 @@
 		A212721D20848CFC00F97E14 /* RoutingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A212721C20848CFC00F97E14 /* RoutingState.swift */; };
 		A212721F20848D6400F97E14 /* RoutingReducers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A212721E20848D6400F97E14 /* RoutingReducers.swift */; };
 		A21272212084908800F97E14 /* RoutingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21272202084908800F97E14 /* RoutingAction.swift */; };
+		A2128F1D2085A8D100F89F87 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2128F1C2085A8D100F89F87 /* NetworkManager.swift */; };
+		A2128F212085A96C00F89F87 /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2128F202085A96C00F89F87 /* QuestionModel.swift */; };
+		A2128F232085A9C300F89F87 /* QuestionsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2128F222085A9C300F89F87 /* QuestionsApi.swift */; };
+		A2128F272085B04D00F89F87 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2128F262085B04D00F89F87 /* String.swift */; };
+		A2128F292085B08E00F89F87 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2128F282085B08E00F89F87 /* UITableView.swift */; };
+		A2128F2B2085B0B100F89F87 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2128F2A2085B0B100F89F87 /* UIView.swift */; };
+		A2128F2D2085B10300F89F87 /* QuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2128F2C2085B10300F89F87 /* QuestionController.swift */; };
+		A2128F2F2085C58100F89F87 /* FetchQuestionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2128F2E2085C58100F89F87 /* FetchQuestionAction.swift */; };
+		A2128F312085C5A700F89F87 /* RequestErrorAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2128F302085C5A700F89F87 /* RequestErrorAction.swift */; };
+		A2128F332085C73C00F89F87 /* QuestionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2128F322085C73C00F89F87 /* QuestionState.swift */; };
+		A2128F392085C8CC00F89F87 /* QuestionReducers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2128F382085C8CC00F89F87 /* QuestionReducers.swift */; };
+		A2278FFE2088810E00C5F337 /* RoutingControllerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2278FFD2088810E00C5F337 /* RoutingControllerAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +59,18 @@
 		A212721C20848CFC00F97E14 /* RoutingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingState.swift; sourceTree = "<group>"; };
 		A212721E20848D6400F97E14 /* RoutingReducers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingReducers.swift; sourceTree = "<group>"; };
 		A21272202084908800F97E14 /* RoutingAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingAction.swift; sourceTree = "<group>"; };
+		A2128F1C2085A8D100F89F87 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A2128F202085A96C00F89F87 /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		A2128F222085A9C300F89F87 /* QuestionsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsApi.swift; sourceTree = "<group>"; };
+		A2128F262085B04D00F89F87 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		A2128F282085B08E00F89F87 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		A2128F2A2085B0B100F89F87 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		A2128F2C2085B10300F89F87 /* QuestionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionController.swift; sourceTree = "<group>"; };
+		A2128F2E2085C58100F89F87 /* FetchQuestionAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchQuestionAction.swift; sourceTree = "<group>"; };
+		A2128F302085C5A700F89F87 /* RequestErrorAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestErrorAction.swift; sourceTree = "<group>"; };
+		A2128F322085C73C00F89F87 /* QuestionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionState.swift; sourceTree = "<group>"; };
+		A2128F382085C8CC00F89F87 /* QuestionReducers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionReducers.swift; sourceTree = "<group>"; };
+		A2278FFD2088810E00C5F337 /* RoutingControllerAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingControllerAction.swift; sourceTree = "<group>"; };
 		EF6C17C96926165AE7CBA8C8 /* Pods-LearningReswift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningReswift.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearningReswift/Pods-LearningReswift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +124,9 @@
 		A20C371B20847717006C4D8A /* LearningReswift */ = {
 			isa = PBXGroup;
 			children = (
+				A2128F252085B03900F89F87 /* Extension */,
+				A2128F242085AB2A00F89F87 /* Model */,
+				A2128F1B2085A85400F89F87 /* Networking */,
 				A20C37342084773F006C4D8A /* Actions */,
 				A20C373320847736006C4D8A /* States */,
 				A20C37322084772E006C4D8A /* Views */,
@@ -112,7 +139,6 @@
 				A20C372B20847717006C4D8A /* Info.plist */,
 				A20C372320847717006C4D8A /* LearningReswift.xcdatamodeld */,
 				A212721820848C4C00F97E14 /* AppRouter.swift */,
-				A212721A20848C8E00F97E14 /* NavigationState.swift */,
 			);
 			path = LearningReswift;
 			sourceTree = "<group>";
@@ -123,6 +149,7 @@
 				A212721420848A3D00F97E14 /* FormReducers.swift */,
 				A212721620848AD900F97E14 /* AppReducers.swift */,
 				A212721E20848D6400F97E14 /* RoutingReducers.swift */,
+				A2128F382085C8CC00F89F87 /* QuestionReducers.swift */,
 			);
 			path = Reducers;
 			sourceTree = "<group>";
@@ -131,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				A20C3735208477A1006C4D8A /* FormController.swift */,
+				A2128F2C2085B10300F89F87 /* QuestionController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -138,9 +166,11 @@
 		A20C373320847736006C4D8A /* States */ = {
 			isa = PBXGroup;
 			children = (
+				A212721A20848C8E00F97E14 /* NavigationState.swift */,
+				A212721C20848CFC00F97E14 /* RoutingState.swift */,
 				A21272102084898500F97E14 /* FormState.swift */,
 				A2127212208489F600F97E14 /* AppState.swift */,
-				A212721C20848CFC00F97E14 /* RoutingState.swift */,
+				A2128F322085C73C00F89F87 /* QuestionState.swift */,
 			);
 			path = States;
 			sourceTree = "<group>";
@@ -149,8 +179,38 @@
 			isa = PBXGroup;
 			children = (
 				A21272202084908800F97E14 /* RoutingAction.swift */,
+				A2128F2E2085C58100F89F87 /* FetchQuestionAction.swift */,
+				A2128F302085C5A700F89F87 /* RequestErrorAction.swift */,
+				A2278FFD2088810E00C5F337 /* RoutingControllerAction.swift */,
 			);
 			path = Actions;
+			sourceTree = "<group>";
+		};
+		A2128F1B2085A85400F89F87 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A2128F1C2085A8D100F89F87 /* NetworkManager.swift */,
+				A2128F222085A9C300F89F87 /* QuestionsApi.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A2128F242085AB2A00F89F87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A2128F202085A96C00F89F87 /* QuestionModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A2128F252085B03900F89F87 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A2128F262085B04D00F89F87 /* String.swift */,
+				A2128F282085B08E00F89F87 /* UITableView.swift */,
+				A2128F2A2085B0B100F89F87 /* UIView.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,17 +332,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2128F2F2085C58100F89F87 /* FetchQuestionAction.swift in Sources */,
 				A212721D20848CFC00F97E14 /* RoutingState.swift in Sources */,
+				A2128F312085C5A700F89F87 /* RequestErrorAction.swift in Sources */,
 				A21272112084898500F97E14 /* FormState.swift in Sources */,
+				A2128F232085A9C300F89F87 /* QuestionsApi.swift in Sources */,
 				A20C371F20847717006C4D8A /* ViewController.swift in Sources */,
 				A21272212084908800F97E14 /* RoutingAction.swift in Sources */,
+				A2128F292085B08E00F89F87 /* UITableView.swift in Sources */,
 				A212721720848AD900F97E14 /* AppReducers.swift in Sources */,
 				A20C371D20847717006C4D8A /* AppDelegate.swift in Sources */,
 				A2127213208489F600F97E14 /* AppState.swift in Sources */,
 				A212721920848C4C00F97E14 /* AppRouter.swift in Sources */,
 				A20C372520847717006C4D8A /* LearningReswift.xcdatamodeld in Sources */,
+				A2278FFE2088810E00C5F337 /* RoutingControllerAction.swift in Sources */,
+				A2128F212085A96C00F89F87 /* QuestionModel.swift in Sources */,
+				A2128F392085C8CC00F89F87 /* QuestionReducers.swift in Sources */,
 				A212721520848A3D00F97E14 /* FormReducers.swift in Sources */,
+				A2128F2B2085B0B100F89F87 /* UIView.swift in Sources */,
+				A2128F332085C73C00F89F87 /* QuestionState.swift in Sources */,
+				A2128F1D2085A8D100F89F87 /* NetworkManager.swift in Sources */,
+				A2128F2D2085B10300F89F87 /* QuestionController.swift in Sources */,
 				A212721F20848D6400F97E14 /* RoutingReducers.swift in Sources */,
+				A2128F272085B04D00F89F87 /* String.swift in Sources */,
 				A20C3736208477A1006C4D8A /* FormController.swift in Sources */,
 				A212721B20848C8E00F97E14 /* NavigationState.swift in Sources */,
 			);

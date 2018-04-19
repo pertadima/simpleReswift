@@ -11,7 +11,7 @@ import ReSwift
 
 final class AppRouter {
     
-    let navigationController: UINavigationController
+    var navigationController: UINavigationController
     
     init(window: UIWindow) {
         navigationController = UINavigationController()
@@ -21,14 +21,32 @@ final class AppRouter {
             $0.select {
                 $0.routingState
             }
-        }
+        }	
     }
     
     // 2
-    fileprivate func pushViewController(state: NavigationState, animated: Bool) {
-        let viewController = state.controller
-        viewController.title = state.rawValue
-        navigationController.pushViewController(viewController, animated: animated)
+    fileprivate func navigateToViewController(state: RoutingState, dismiss: Bool,animated: Bool) {
+        let viewController = state.navigation.controller
+        viewController.title = state.navigation.rawValue
+        let newViewControllerType = type(of: viewController)
+        if let currentVc = navigationController.topViewController {
+            let currentViewControllerType = type(of: currentVc)
+            if currentViewControllerType == newViewControllerType && !dismiss{
+                return
+            }
+        }
+        let vc = UINavigationController(rootViewController: viewController)
+        switch state.segue {
+        case .present:
+            navigationController.present(vc, animated: animated, completion: nil)
+        case .dismiss:
+            navigationController.dismiss(animated: true, completion: nil)
+        case .presentToPresent:
+            navigationController.dismiss(animated: true, completion: nil)
+            navigationController.present(vc, animated: animated, completion: nil)
+        case .push:
+            navigationController.pushViewController(viewController, animated: animated)
+        }
     }
 }
 
@@ -36,9 +54,10 @@ final class AppRouter {
 // 3
 extension AppRouter: StoreSubscriber {
     func newState(state: RoutingState) {
-        // 4
         let shouldAnimate = navigationController.topViewController != nil
-        // 5
-        pushViewController(state: state.navigationState, animated: shouldAnimate)
+        if let nc = state.currentController { navigationController = nc }
+        if state.nextNavigation {
+            navigateToViewController(state: state, dismiss: state.dismiss ,animated: shouldAnimate)
+        }
     }
 }

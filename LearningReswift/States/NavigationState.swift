@@ -11,11 +11,17 @@ import ReSwift
 
 enum NavigationState: String {
     case login = "FormController"
-    
+    case next = "QuestionController"
     var controller: UIViewController {
         switch self {
-        case .login:
+        case .next:
+            return QuestionController()
+        default :
             return FormController()
         }
     }
+}
+
+enum Segue{
+    case push, present, dismiss, presentToPresent
 }

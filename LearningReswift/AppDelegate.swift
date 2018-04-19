@@ -6,24 +6,28 @@
 //  Copyright © 2018 Irfan pertadima. All rights reserved.
 //
 
-import UIKit
+import ReSwift
 import CoreData
 
-
-import ReSwift
 var store =  Store<AppState>(reducer: appReducer, state: nil)
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    var appRouter: AppRouter?
     var window: UIWindow?
-
+    var appRouter : AppRouter?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        UINavigationBar.appearance().tintColor = .white
+        //        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        UINavigationBar.appearance().shadowImage = UIImage()
+        
+        
         let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window
         window.makeKeyAndVisible()
-        window.rootViewController = FormController()
+        appRouter = AppRouter(window: window)
+        //window.rootViewController = AppRoute
         return true
     }
 
