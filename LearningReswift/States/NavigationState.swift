@@ -14,10 +14,10 @@ enum NavigationState: String {
     case next = "QuestionController"
     var controller: UIViewController {
         switch self {
+        case .login:
+            return FormController()
         case .next:
             return QuestionController()
-        default :
-            return FormController()
         }
     }
 }

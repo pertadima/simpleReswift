@@ -36,6 +36,8 @@
 		A2128F332085C73C00F89F87 /* QuestionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2128F322085C73C00F89F87 /* QuestionState.swift */; };
 		A2128F392085C8CC00F89F87 /* QuestionReducers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2128F382085C8CC00F89F87 /* QuestionReducers.swift */; };
 		A2278FFE2088810E00C5F337 /* RoutingControllerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2278FFD2088810E00C5F337 /* RoutingControllerAction.swift */; };
+		E8B3363F208F4A93001C9980 /* QuestionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B3363D208F4A92001C9980 /* QuestionTableView.swift */; };
+		E8B33640208F4A93001C9980 /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B3363E208F4A93001C9980 /* QuestionTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +73,8 @@
 		A2128F322085C73C00F89F87 /* QuestionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionState.swift; sourceTree = "<group>"; };
 		A2128F382085C8CC00F89F87 /* QuestionReducers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionReducers.swift; sourceTree = "<group>"; };
 		A2278FFD2088810E00C5F337 /* RoutingControllerAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingControllerAction.swift; sourceTree = "<group>"; };
+		E8B3363D208F4A92001C9980 /* QuestionTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTableView.swift; sourceTree = "<group>"; };
+		E8B3363E208F4A93001C9980 /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
 		EF6C17C96926165AE7CBA8C8 /* Pods-LearningReswift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningReswift.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearningReswift/Pods-LearningReswift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -157,6 +161,8 @@
 		A20C37322084772E006C4D8A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E8B3363D208F4A92001C9980 /* QuestionTableView.swift */,
+				E8B3363E208F4A93001C9980 /* QuestionTableViewCell.swift */,
 				A20C3735208477A1006C4D8A /* FormController.swift */,
 				A2128F2C2085B10300F89F87 /* QuestionController.swift */,
 			);
@@ -355,6 +361,8 @@
 				A2128F2D2085B10300F89F87 /* QuestionController.swift in Sources */,
 				A212721F20848D6400F97E14 /* RoutingReducers.swift in Sources */,
 				A2128F272085B04D00F89F87 /* String.swift in Sources */,
+				E8B3363F208F4A93001C9980 /* QuestionTableView.swift in Sources */,
+				E8B33640208F4A93001C9980 /* QuestionTableViewCell.swift in Sources */,
 				A20C3736208477A1006C4D8A /* FormController.swift in Sources */,
 				A212721B20848C8E00F97E14 /* NavigationState.swift in Sources */,
 			);
