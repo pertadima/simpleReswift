@@ -14,9 +14,8 @@ func routingReducer(action: Action, state: RoutingState?) -> RoutingState {
     switch action {
     case let action as RoutingAction:
         state.navigation = action.destination
-        state.segue = action.segue
-        state.nextNavigation = true
         state.dismiss = action.segue == .dismiss || action.segue == .presentToPresent
+        state.nextNavigation = true
     case let actions as RoutingControllerAction:
         state.currentController = actions.controller
         state.nextNavigation = false

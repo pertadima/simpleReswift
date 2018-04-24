@@ -15,6 +15,7 @@ final class AppRouter {
     
     init(window: UIWindow) {
         navigationController = UINavigationController()
+        navigationController.viewControllers = [FormController()]
         window.rootViewController = navigationController
         // 1
         store.subscribe(self) {

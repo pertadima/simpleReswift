@@ -99,7 +99,7 @@ class FormController : UIViewController, StoreSubscriber {
     @objc func nextAction()
     {
         let routeDestination: NavigationState = .next
-        store.dispatch(RoutingAction(destination: routeDestination, value: myForm.text!, segue: .push))
+        store.dispatch(RoutingAction(destination: routeDestination, value: myForm.text!, segue: .present))
     }
 }
 
